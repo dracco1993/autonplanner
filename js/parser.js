@@ -8,12 +8,12 @@ function parse(config,frames) {
 	}
 	writeLine('/**');
 	writeLine();
-	writeLine('\tVEX Autonomous Planner');
+	writeLine('\FRC Autonomous Planner');
 	writeLine('\tGenerated '+(new Date()).toUTCString());
 	writeLine();
 	writeLine('\tUsage: Tune variables in vap_init() to robot. Call vap_autonomous() to run the autonomous program.');
 	writeLine();
-	writeLine('\tVEX Autonomous Planner &copy; Ruiqi Mao 2014');
+	writeLine('\FRC Autonomous Planner &copy; Ruiqi Mao 2014');
 	writeLine('\tAll Rights Reserved');
 	writeLine();
 	writeLine('**/');

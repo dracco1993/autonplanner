@@ -309,7 +309,7 @@ function displayKeyframe() {
                 var input = $('<select data-name="'+component['name']+'"><option value="0">Off</option><option value="1">On</option></select>');
                 var value = getProperty(properties,'-'+component['name'],0);
                 input.val(value);
-                input.on('change',function() { 
+                input.on('change',function() {
                     keyframes[0]['properties']['-'+$(this).data("name")] = $(this).val();
                 });
                 $(".keyframes-init-pneumatics").append(input);
@@ -617,7 +617,7 @@ function updatePlayback(comp,time) {
 				var bar = $("#c"+id).children().first();
 				var span = $("#c"+id).find('span');
 				span.text(value);
-				if(min != max) {	
+				if(min != max) {
 					bar.css({'width':(value-min)/max*100+'%'});
 				}
 			}
@@ -866,7 +866,7 @@ function resizeField() {
         $(".keyframes-field").height($(".keyframes-field-wrapper").height());
         $(".keyframes-field").width($(".keyframes-field").height());
     }else
-    {   
+    {
         $(".keyframes-field").width($(".keyframes-field-wrapper").width());
         $(".keyframes-field").height($(".keyframes-field").width());
     }
